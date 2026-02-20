@@ -22,7 +22,6 @@ body{
      -apple-system, Segoe UI, 
      Roboto, Apple SD Gothic Neo, 
      Noto Sans KR, sans-serif;
-     background-color: var(--bg);
      color: var(--fg);
 }
 
@@ -46,8 +45,19 @@ button {
 
 section {
   min-height: 100vh;
+  &:nth-child(odd){
+    background-color: sandybrown;
+  }
 }
 
 ul,ol,dl {
   list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
 }

@@ -43,4 +43,17 @@ export const headerData = {
         { id: "account", label: "마이", icon: img("icon_myp.svg"), href: "#" },
         { id: "cart", label: "장바구니", icon: img("icon_cart.svg"), href: "#" },
     ],
+    topBanner: {
+        enabled: true,
+        height: 64,                   // px
+        items: [
+            { id: "tb-1", text: "새로운 소식이 있습니다.", href: "#" },
+            { id: "tb-2", text: "업데이트 안내", href: "#" },
+            { id: "tb-3", text: "이벤트 진행 중!", href: "#" },
+        ],
+        closeIcon: img("icon_pop_close_b.png"),
+        background: "#DC272D",
+        color: "#fff",
+    },
+
 }

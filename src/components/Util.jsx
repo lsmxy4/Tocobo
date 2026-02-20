@@ -2,19 +2,17 @@ import React from 'react'
 import { headerData } from '../util/header'
 
 const Util = () => {
+  const utilData = headerData.utils
   return (
-    <div className="util">
-      {headerData.utils.map((item) => (
-        <a
-          key={item.id}
-          href={item.href}
-          className="util-item"
-          aria-label={item.label}
-        >
-          <img src={item.icon} alt={item.label} />
-        </a>
+    <ul className='util-list'>
+      {utilData.map((u) => (
+        <li key={u.id}>
+          <a href={u.href}>
+            <img src={u.icon} alt="" />
+          </a>
+        </li>
       ))}
-    </div>
+    </ul>
   )
 }
 

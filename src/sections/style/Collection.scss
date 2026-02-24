@@ -1,0 +1,39 @@
+.txt{
+    margin-top: 18px;
+    margin-bottom: 67px;
+    font-size: 1.9rem;
+    color: var(--secondary);
+}
+
+.collection-inner{
+    text-align: center;
+    .collection-slider{
+
+        .info-wrap{
+            .info-tit{
+                font-size: 1.3rem;
+                color: var(--secondary);
+                border: 1px solid var(--secondary);
+                border-radius: 30px;
+                padding: 19px 14px;
+            }
+        }
+
+        .img-wrap{
+            width: 36rem;
+            height: 36rem;
+            overflow: hidden;
+            border-radius: 1rem;
+            background-color: #f2f2f2;
+            align-content: center;
+            margin: auto;
+            img{
+                width: 110%;
+            }
+        }
+
+        .swiper-pagination{
+            position: static;
+        }
+    }
+}

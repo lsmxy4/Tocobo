@@ -1,0 +1,33 @@
+.skincare-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2.tit{
+        color: var(--secondary);
+    }
+    a.btn{
+        background: var(--s-gradient);
+        &:hover{
+
+        }
+    }
+    .slider-wrap{
+        width: 75rem;
+        height: 53rem;
+        position: relative;
+        .in{
+            position: absolute;
+            width: 200%;
+            height: 100%;
+            // background-color: rgba(244,165,96,0.432);
+
+            .skincare-slider{
+                height: 100%;
+                a{
+                    display: block;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

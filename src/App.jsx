@@ -9,6 +9,7 @@ import Follow from './sections/Follow'
 import Collection from './sections/Collection'
 import TopBanner from './components/TopBanner'
 import FixedTopBtn from './components/FixedTopBtn'
+import Instgrams from './sections/Instgrams'
 
 function App() {
 const [topBanner,setTopBanner] = useState('')
@@ -47,8 +48,8 @@ const upTopBanner = () =>{
         <section id= 'skincare' className='section'>
         <SkinCare />
         </section>
-        <section id= 'review' className='section'>
-        <Review />
+        <section id= 'instagram' className='section'>
+        <Instgrams />
         </section>
       </main>
       <Footer />

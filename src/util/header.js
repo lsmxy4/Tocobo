@@ -32,9 +32,9 @@ export const headerData = {
             type: 'section'
         },
         {
-            id: 'review',
-            label: 'review',
-            href: '#review',
+            id: 'instgrams',
+            label: 'instgrams',
+            href: '#instgrams',
             type: 'section'
         }
     ],

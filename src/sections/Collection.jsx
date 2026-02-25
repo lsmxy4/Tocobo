@@ -1,32 +1,31 @@
-import React,{useRef,useEffect} from 'react'
-import { collectionData } from '../util/Collection'
+import React, { useRef, useEffect } from 'react'
+import { collectionData } from '../util/collection'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import { Pagination,Navigation } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
 import './style/Collection.scss'
-
 const Collection = () => {
 
   const prevRef = useRef(null)
   const nextRef = useRef(null)
   const swiperRef = useRef(null)
 
-  useEffect(()=>{
+  useEffect(() => {
 
-    if(swiperRef.current &&
+    if (swiperRef.current &&
       swiperRef.current.params &&
       prevRef.current &&
       nextRef.current
-    ){
-      swiperRef.current.params.navigation.prevEl=prevRef.current
-      swiperRef.current.params.navigation.nextEl=nextRef.current
+    ) {
+      swiperRef.current.params.navigation.prevEl = prevRef.current
+      swiperRef.current.params.navigation.nextEl = nextRef.current
       swiperRef.current.navigation.destroy()
       swiperRef.current.navigation.init()
       swiperRef.current.navigation.update()
     }
-  },[])
+
+  }, [])
 
   return (
     <div className='inner collection-inner'>
@@ -39,14 +38,15 @@ const Collection = () => {
           Shop By Category
         </p>
       </div>
+
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        loop ={true}
+        loop={true}
         pagination={{
-          type : 'progressbar'
+          type: 'progressbar'
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="collection-slider"
       >
@@ -80,6 +80,7 @@ const Collection = () => {
       onClick={(e)=>e.preventDefault()} 
       className='next' 
       ref={nextRef}>next</a>
+
     </div>
   )
 }

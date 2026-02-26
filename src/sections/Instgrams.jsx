@@ -15,9 +15,7 @@ const Instgrams = () => {
       </div>
       <ul className="instar-list">
           {skincare.map(item => (
-          <li 
-          className='instar-slider'
-          key={item.id}>
+          <li key={item.id}>
             <a href={item.link}>
               <img src={item.image} alt={item.alt} />
             </a>

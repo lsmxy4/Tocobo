@@ -10,10 +10,19 @@ import Collection from './sections/Collection'
 import TopBanner from './components/TopBanner'
 import FixedTopBtn from './components/FixedTopBtn'
 import Instgrams from './sections/Instgrams'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
 const [topBanner,setTopBanner] = useState('')
 const[isScrolled,setIsScrolled] = useState(false)
+
+useEffect(() => {
+  AOS.init({
+    duration:400,
+    easing:'ease'
+  });
+},[])
 
 useEffect(()=> {
   const handleScroll =()=>{

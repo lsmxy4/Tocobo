@@ -1,8 +1,28 @@
-.instar-list {
-  display: flex;
-  gap: 4px;
+.instar-inner {
+  h2.tit {
+    color: var(--primary);
+  }
 
-  .instar-slider{
-    
+  p.txt {
+    font-family: 'Source Serif Pro';
+    font-size: 2rem;
+    font-style: inherit;
+  }
+
+  .instar-list {
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+
+    li {
+      flex: 1;
+
+      a {
+        display: block;
+        height: 21rem;
+        background-size: cover;
+        background-position: center;
+      }
+    }
   }
 }

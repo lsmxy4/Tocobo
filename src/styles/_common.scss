@@ -25,22 +25,22 @@
     }
 
     h2.tit {
-        font-size: 6rem;
+        font-size: clamp(4rem,5vw,6rem);
         font-weight: 200;
     }
 
     p.txt {
-        font-size: 1.6rem;
-
+        font-size: clamp(1.6rem,1.8vw,2rem);
+        line-height: 1.4;
     }
 
     a.btn {
-        display: inline-block;
+        display: inline-flex;
         margin-top: 3rem;
-        // padding: 1.7rem 6.8rem;
+        padding: 1.7rem 6.8rem;
         font-size: 1.6rem;
         text-align: center;
-        width: 27rem;
+        max-width: 27rem;
         height: 5rem;
         align-content: center;
         color: var(--bg);
@@ -52,6 +52,10 @@
         overflow: hidden;
         z-index: 1;
         cursor: pointer;
+        @media screen and (max-width:1111px){   
+            font-size: 1.3rem;
+            padding: 1rem 3rem;
+        }
 
         &::after {
             content: "";
@@ -101,6 +105,11 @@ footer {
         margin: auto;
         position: relative;
         height: 100%;
+
+        @media screen and (max-width:1600px){
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
     }
 }
 
@@ -130,4 +139,13 @@ footer{
         }
     }
 
+}
+
+@keyframes up{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-2rem);
+    }
 }

@@ -45,7 +45,7 @@ export const headerData = {
     ],
     topBanner: {
         enabled: true,
-        height: 64,                   // px
+        height: 64,
         items: [
             { id: "tb-1", text: "새로운 소식이 있습니다.", href: "#" },
             { id: "tb-2", text: "업데이트 안내", href: "#" },

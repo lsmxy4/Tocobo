@@ -1,68 +1,75 @@
 const img = (path) => `/img/${path}`;
+import health from '../assets/health.png'
+import beauty from '../assets/beauty.png'
+import eating from '../assets/eating.png'
+import clothes from '../assets/clothes.png'
+import appli from '../assets/appli.png'
+import hair from '../assets/hair.png'
+
 export const categories = [
   {
     id: 61,
-    slug: "make-up",
-    name: "메이크업",
-    href: "/category/make-up/61/",
+    slug: "health",
+    name: "건강식품",
+    href: "/category/health/61/",
     img: {
-      src: img("cate-1.png"),
-      alt: "메이크업",
+      src: health,
+      alt: "건강식품",
     },
   },
   {
     id: 42,
-    slug: "sun",
-    name: "선케어",
-    href: "/category/sun/42/",
+    slug: "beauty",
+    name: "뷰티",
+    href: "/category/beauty/42/",
     img: {
-      src: img("cate-2.png"),
+      src: beauty,
 
-      alt: "선케어",
+      alt: "뷰티",
     },
   },
   {
     id: 52,
-    slug: "lip",
-    name: "립케어",
-    href: "/category/lip/52/",
+    slug: "eating",
+    name: "식품",
+    href: "/category/eating/52/",
     img: {
-      src: img("cate-3.png"),
+      src: eating,
 
-      alt: "립케어",
+      alt: "식품",
     },
   },
   {
     id: 50,
-    slug: "skincare",
-    name: "스킨케어",
-    href: "/category/skincare/50/",
+    slug: "clothes",
+    name: "의류",
+    href: "/category/clothes/50/",
     img: {
-      src: img("cate-4.png"),
+      src: clothes,
 
-      alt: "스킨케어",
+      alt: "의류",
     },
   },
   {
     id: 47,
-    slug: "cleansing",
-    name: "클렌징",
-    href: "/category/cleansing/47/",
+    slug: "appli",
+    name: "가전",
+    href: "/category/appli/47/",
     img: {
-      src: img("cate-5.png"),
+      src: appli,
 
-      alt: "클렌징",
+      alt: "가전",
     },
   },
   {
     id: 28,
-    slug: "setetc",
-    name: "세트/기타",
-    href: "/category/setetc/28/",
+    slug: "hair",
+    name: "해어",
+    href: "/category/hair/28/",
     img: {
-      src: img("cate-6.png"),
+      src: hair,
 
-      alt: "세트/기타",
+      alt: "해어",
     },
   },
 ];

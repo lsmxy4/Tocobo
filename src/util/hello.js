@@ -1,19 +1,19 @@
 const img = (path) => `/img/${path}`;
+import imgs from '../assets/helloImg.png'
 export const helloData = {
 
   media: {
     type: "image",                     // "image" | "video"
-    src: img("tocobosun_final_s.gif"),   // public 폴더 기준
+    src: imgs,   // public 폴더 기준
     alt: "Pink square demo image",
     radius: 24                         // 이미지 둥근 모서리(px)
   },
 
-  eyebrow: "Hello❤️ We are TOCOBO!",
-  title: "Follow <br/> Your Intuition",
+  title: "ATOMY",
   description:
-    "민감하고 섬세한 피부에 직관적인 처방을 제안합니다. <br/> 당신의 직감이 깨끗한 아름다움으로 이어지도록,<br/> 토코보의 진정성 있는 메시지로 응답할게요.",
+    "지난 2009년 창립한 애터미는 <br>2025년 기준 한국을 비롯해 전 세계 27개 지역에서 <br>직접판매 영업을 하고 있는 글로벌 네트워크마케팅 기업입니다.",
   cta: {
-    label: "MEET TOCOBO",
+    label: "MEET ATOMY",
     href: "/about"
   }
 };

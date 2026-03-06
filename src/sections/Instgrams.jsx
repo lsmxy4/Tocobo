@@ -1,29 +1,27 @@
 import React from 'react'
-import skincare from '../util/instagram'
+import instagram from '../util/instagram'
 import './style/Instargram.scss'
-
-const Instgrams = () => {
-    return (
+const Instargram = () => {
+  return (
     <div className='inner instar-inner'>
       <div className="t-wrap">
-        <h2 className="tit">
-            instagram
-        </h2>
-        <p className="txt">
-            @ShinDongwhan
-        </p>
+        <h2 className="tit">Instagram</h2>
+        <p className="txt">@tocobo_official</p>
       </div>
       <ul className="instar-list">
-          {skincare.map(item => (
-          <li key={item.id}>
-            <a href={item.link}>
-              <img src={item.image} alt={item.alt} />
-            </a>
-          </li>
+        {instagram.map((i)=>(
+
+        <li key={i.id}>
+          <a href={i.link}
+          alt={i.alt}
+          style={{backgroundImage:`url(${i.image})`}}
+
+          >{i.id}</a>
+        </li>
         ))}
       </ul>
     </div>
   )
 }
 
-export default Instgrams
+export default Instargram

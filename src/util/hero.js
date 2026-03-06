@@ -2,6 +2,10 @@ const img = (path) => `/img/${path}`;
 import title1 from '../assets/1st-title.png'
 import title2 from '../assets/1-1title.png'
 import title3 from '../assets/1-2title.png'
+import Mtitle1 from '../assets/M1title.png'
+import Mtitle2 from '../assets/M1-1title.png'
+import Mtitle3 from '../assets/M1-2title.png'
+
 
 export const heroSlides = [
   {
@@ -13,7 +17,7 @@ export const heroSlides = [
     ctaHref: "/products",
     image: {
       desktop:title1,
-      mobile: img("main_mo_1.jpg"),
+      mobile: Mtitle1,
     },
     alt: "비건 스킨케어 히어로 배너",
     active: true,
@@ -28,7 +32,7 @@ export const heroSlides = [
     ctaHref: "/story/hydration",
     image: {
       desktop:title2,
-      mobile: img("main_mo_2.jpg"),
+      mobile: Mtitle2,
     },
     alt: "보습 라인 배너",
     active: true,
@@ -43,7 +47,7 @@ export const heroSlides = [
     ctaHref: "/collections/sensitive",
     image: {
       desktop:title3,
-      mobile: img("main_mo_3.jpg"),
+      mobile: Mtitle3,
     },
     alt: "민감 피부 라인 배너",
     active: true,

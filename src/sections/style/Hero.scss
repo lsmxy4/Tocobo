@@ -1,5 +1,8 @@
 .hero-container {
     height: 90rem;
+    @media screen and (max-width:1111px){
+        height: 162rem;
+    }
 
     h2.tit {
         font-size: clamp(5rem,6vw,7.3rem);
@@ -16,10 +19,17 @@
 
         .inner {
             display: flex;
+            margin-left: 25rem;
             align-items: center;
             justify-content: left;
 
            @media screen and (max-width:1111px) {
+                margin: auto;
+            
+                .hero-slider{
+                    font-size: 3.5rem;
+                }
+
                 .t-wrap {
                     position: absolute;
                     left: 2rem;
@@ -53,6 +63,10 @@
                 color: var(--main-slider01-tit);
                 font-family: 'Circular Std';
                 font-weight: 500;
+
+                @media screen and (max-width:390px) {
+                    font-size: 3.5rem;
+                }
             }
 
             p.txt {

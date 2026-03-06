@@ -32,7 +32,8 @@ const Collection = () => {
 
       <div className="t-wrap">
         <h2 className="tit">
-          ATOMY SHOP
+          TOCOBO <br className='mob-only'/>
+           COLLECTION
         </h2>
         <p className="txt">
           Shop By Category

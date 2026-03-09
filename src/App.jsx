@@ -72,6 +72,9 @@ const upTopBanner = () =>{
         <section id= 'skincare' className='section'>
         <SkinCare />
         </section>
+        <section id= 'review' className='section'>
+        <Review />
+        </section>
         <section id= 'instagram' className='section'>
         <Instgrams />
         </section>

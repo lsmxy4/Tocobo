@@ -12,31 +12,37 @@ export const headerData = {
     menus: [
         {
             id: 'hero',
-            label: 'hero',
+            label: 'Main',
             href: '#hero',
             type: 'section'
         },
         {
             id: 'follow',
-            label: 'follow',
+            label: 'About',
             href: '#follow',
             type: 'section'
         },
         {
             id: 'collection',
-            label: 'collection',
+            label: 'Hit item',
             href: '#collection',
             type: 'section'
         },
         {
             id: 'skincare',
-            label: 'skincare',
+            label: 'Cosmetics',
             href: '#skincare',
             type: 'section'
         },
         {
+            id: 'review',
+            label: 'Review',
+            href: '#review',
+            type: 'section'
+        },
+        {
             id: 'instgrams',
-            label: 'instgrams',
+            label: 'Instgrams',
             href: '#instgrams',
             type: 'section'
         }

@@ -19,9 +19,13 @@
 
         .inner {
             display: flex;
-            margin-left: 25rem;
+            margin-left: 19rem;
             align-items: center;
             justify-content: left;
+
+            @media screen and (max-width:1650px){
+                margin:0 ;
+            }
 
            @media screen and (max-width:1111px) {
                 margin: auto;
@@ -136,11 +140,11 @@
         }
 
         .arr-prev {
-            background-image: url(/img/icon_main_ban_arrow_prev.svg);
+            background-image: url(/src/assets/Arrow\ 2.png);
         }
 
         .arr-next {
-            background-image: url(/img/icon_main_ban_arrow_next.svg);
+            background-image: url(/src/assets/Arrow\ 1.png);
         }
 
         .swiper-pagination-fraction {
@@ -152,6 +156,7 @@
             .swiper-pagination-current {
                 font-size: 2.2rem;
                 position: absolute;
+                color: var(--primary);
                 left: 0;
                 top: 0;
             }
@@ -159,6 +164,7 @@
             .swiper-pagination-total {
                 font-size: 2.2rem;
                 position: absolute;
+                color: var(--primary);
                 right: 0;
                 bottom: 0;
             }
@@ -168,8 +174,8 @@
                 display: block;
                 position: absolute;
                 width: 1px;
-                height: 50px;
-                background-color: var(--bg);
+                height: 59px;
+                background-color: var(--primary);
                 left: 10%;
                 top: 40%;
                 transform: rotate(45deg) translate(-50%, -50%);

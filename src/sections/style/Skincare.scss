@@ -14,15 +14,17 @@
     }
 
     h2.tit {
-        color: var(--secondary);
+        color: var(--primary);
+        font-size: 5.4rem;
 
         @media screen and (max-width:1111px) {
             margin-bottom: 2rem;
+            font-size: 3.5rem;
         }
     }
 
     a.btn {
-        background: var(--s-gradient);
+        background: var(--primary);
 
         &:hover {
             color: var(--secondary)

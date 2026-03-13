@@ -141,7 +141,8 @@ const Footer = () => {
                   title={sns.label}
                   aria-label={sns.label}>
                   {React.createElement(sns.icon, {
-                    size: 22, "aria-hidden": true
+                    size: 48, 
+                    "aria-hidden": true
                   })}
                 </a>
               </li>

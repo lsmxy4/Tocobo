@@ -79,7 +79,7 @@ export const socialLinks = [
     id: "kakao",
     label: "KakaoTalk 채널",
     href: "https://pf.kakao.com/your-channel",
-    icon: RiKakaoTalkFill
+    icon: RiKakaoTalkFill,
   },
   {
     id: "instagram",

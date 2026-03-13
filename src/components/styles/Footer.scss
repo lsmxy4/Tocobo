@@ -67,13 +67,12 @@ footer {
             flex: 1;
 
             .cus-wrap {
+                margin-bottom: 8rem;
+                
                 @media screen and (max-width:1111px) {
                     border-top: .1rem solid var(--line);
                     border-bottom: .1rem solid var(--line);
                     padding: 1.5rem 0;
-
-
-
                 }
 
                 .cs-box a {
@@ -179,6 +178,11 @@ footer {
                 font-size: 1.3rem;
                 color: #6f6f6f
             }
+        }
+
+        .sns-links {
+            display: flex;
+            gap: 2rem;
         }
     }
 }

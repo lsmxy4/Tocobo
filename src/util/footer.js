@@ -5,8 +5,8 @@ import { RiKakaoTalkFill } from "react-icons/ri";
 
 // 로고
 export const logoData = {
-  src: img("logo.svg"),
-  alt: "TOCOBO 로고",
+  src: img("Logos.png"),
+  alt: "Atomy 로고",
   href: "/",
 };
 

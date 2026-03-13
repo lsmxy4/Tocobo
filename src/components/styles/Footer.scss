@@ -68,7 +68,7 @@ footer {
 
             .cus-wrap {
                 margin-bottom: 8rem;
-                
+
                 @media screen and (max-width:1111px) {
                     border-top: .1rem solid var(--line);
                     border-bottom: .1rem solid var(--line);
@@ -183,6 +183,11 @@ footer {
         .sns-links {
             display: flex;
             gap: 2rem;
+            li{
+                svg{
+                    fill: var(--primary);
+                }
+            }
         }
     }
 }

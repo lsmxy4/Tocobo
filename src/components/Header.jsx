@@ -17,7 +17,7 @@ const Header = ({mNavOpen,onNavOpen,onNavClose}) => {
                         onNavOpen()
                     }}
                 >
-                    <img src="/img/icon_ham.svg" alt="메뉴열기" />
+                    <img src="/img/ham.png" alt="메뉴열기" />
                 </a>
                 <Nav />
                 <h1 className='tit'>

@@ -2,11 +2,11 @@
     display: flex;
     padding-top: 12rem;
     align-items: center;
+    gap: 3rem;
 
     @media screen and (max-width:1111px) {
         flex-direction: column;
-        gap: 6rem;
-        padding-top: 6rem;
+        padding: 12rem 0;
     }
 
     .img-warp{

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import { collectionData } from '../util/collection'
+import { collectionData} from '../util/Collection'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';

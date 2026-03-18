@@ -4,6 +4,9 @@
 
 #skincare{
     min-height: 0;
+    @media screen and (max-width:1111px) {
+        overflow: hidden;
+    }
 }
 
 #review{

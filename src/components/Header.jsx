@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import Util from './Util'
-import './styles/Header.scss'
+import './style/Header.scss'
 import { headerData } from '../util/header'
 import Mnav from './Mnav'
 import title from '../assets/Clip path group.png'

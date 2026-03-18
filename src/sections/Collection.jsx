@@ -32,7 +32,7 @@ const Collection = () => {
 
       <div className="t-wrap">
         <h2 className="tit">
-          TOCOBO COLLECTION
+          ATOMY SHOP
         </h2>
         <p className="txt">
           Shop By Category

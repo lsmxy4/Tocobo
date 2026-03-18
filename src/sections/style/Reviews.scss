@@ -1,0 +1,136 @@
+.review-container {
+    background-color: var(--bg2);
+    z-index: 1;
+    padding: 10rem 0;
+
+    .inner {
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .review-header {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        .tit {
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 2rem;
+            position: relative;
+
+        }
+
+        .sub-txt {
+            font-size: 1.6rem;
+            color: var(--muted);
+            line-height: 1.6;
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+    }
+
+    .review-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .review-card {
+        display: flex;
+        align-items: center;
+        padding: 3rem;
+        background: var(--bg);
+        border-radius: 1rem;
+
+        .img-box {
+            flex-shrink: 0;
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .txt-box {
+            .prod-name {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+
+                .short-name {
+                    display: none;
+                }
+            }
+
+            .prod-desc {
+                font-size: 1.4rem;
+                color: #888;
+                line-height: 1.5;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1111px) {
+        padding: 6rem 0;
+
+        .review-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .review-card {
+            flex-direction: column;
+            text-align: center;
+
+            .img-box {
+                width: 15rem;
+                height: 15rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .review-header .sub-txt {
+            display: none;
+        }
+
+        .review-grid {
+            gap: 1.5rem;
+        }
+
+        .review-card {
+            padding: 2rem 1rem;
+
+            .img-box {
+                width: 10rem;
+                height: 10rem;
+            }
+
+            .txt-box {
+                .prod-name {
+                    .full-name {
+                        display: none;
+                    }
+
+                    .short-name {
+                        display: block;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .prod-desc {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react'
 import './styles/main.scss'
+import './App.scss'
 import Header from './components/Header'
 import Hero from './sections/Hero'
 import SkinCare from './sections/SkinCare'
@@ -17,12 +18,23 @@ function App() {
 const [topBanner,setTopBanner] = useState('')
 const[isScrolled,setIsScrolled] = useState(false)
 
+const [mNavOpen,setMNavOpen] = useState(false)
+
+const handleMNavOpen =()=> setMNavOpen(true)
+const handleMNavClose =()=> setMNavOpen(false)
+
 useEffect(() => {
   AOS.init({
     duration:400,
     easing:'ease'
   });
 },[])
+
+useEffect(() => {
+
+  document.body.style.overflow = mNavOpen ? 'hidden' : ''
+
+},[mNavOpen])
 
 useEffect(()=> {
   const handleScroll =()=>{
@@ -43,7 +55,11 @@ const upTopBanner = () =>{
     <div className={`app-container ${topBanner} ${isScrolled ? 'scrolled' : ''}`}>
     <FixedTopBtn/>
     <TopBanner onClick = {upTopBanner}/>
-      <Header />
+      <Header 
+      mNavOpen={mNavOpen}
+      onNavOpen ={handleMNavOpen}
+      onNavClose ={handleMNavClose}
+      />
       <main>
         <section id= 'hero' className='section'>
         <Hero />
@@ -56,6 +72,9 @@ const upTopBanner = () =>{
         </section>
         <section id= 'skincare' className='section'>
         <SkinCare />
+        </section>
+        <section id= 'review' className='section'>
+        <Review />
         </section>
         <section id= 'instagram' className='section'>
         <Instgrams />

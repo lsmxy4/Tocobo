@@ -23,6 +23,7 @@ body{
      Roboto, Apple SD Gothic Neo, 
      Noto Sans KR, sans-serif;
      color: var(--fg);
+     overflow-x: hidden;
 }
 
 *{
@@ -44,10 +45,7 @@ button {
 }
 
 section {
-  min-height: 100vh;
-  &:nth-child(odd){
-    // background-color: sandybrown;
-  }
+  min-height: 85vh;
 }
 
 ul,ol,dl {

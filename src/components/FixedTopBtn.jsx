@@ -13,10 +13,7 @@ const FixedTopBtn = () => {
             scrollTo('hero')
           )
         }}>위로 올라가는 버튼</button>
-        <a href="#" className='talk-btn'>
-            TCB
-        </a>
-        <p>
+        <p className='talk-btn'>
             1:1 Talk
         </p>
     </div>

@@ -9,11 +9,12 @@ const SkinCare = () => {
     <div className='inner skincare-inner'>
       <div className="t-wrap">
         <h2 className="tit">
-          Vegan Skincare
+          ATOMY COSMETICS
         </h2>
         <p className="txt">
-          피부에 건강한 영향력을 전달하고 꼭 필요한 성분만을 담아 <br />
-          놀라운 변화를 선사하는 비건 스킨케어 브랜드 토코보
+          피부에 꼭 필요한 성분만 담아, 매일 안심하고 사용하는 스킨케어<br/>
+          과한 자극 없이 피부 본연의 밸런스를 지켜주는 데일리 케어<br/>
+          기본에 충실한 처방으로 피부의 변화를 만들어갑니다
         </p>
         <a href="#" className="btn">
           meet tocobo

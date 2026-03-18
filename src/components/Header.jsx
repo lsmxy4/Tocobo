@@ -4,7 +4,7 @@ import Util from './Util'
 import './style/Header.scss'
 import { headerData } from '../util/header'
 import Mnav from './Mnav'
-import title from '../assets/Clip path group.png'
+import title from '../assets/Clip path group.png' 
 
 const Header = ({mNavOpen,onNavOpen,onNavClose}) => {
     const headerLogo = headerData.logo

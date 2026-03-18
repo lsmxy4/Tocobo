@@ -3,7 +3,7 @@ header {
     top: 4rem;
     width: 100%;
     z-index: 5;
-    height: 10.5rem;
+    height: 10.5rem; 
     transition: all .3s;
 
     @media screen and (max-width:1111px) {
@@ -15,6 +15,9 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width:1111px) {
+            padding-left:.5rem ;
+        }
 
         .mob-nav-btn {
             display: none;
@@ -62,6 +65,7 @@ header {
 
         h1.tit {
             position: absolute;
+            margin-top: 1rem;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);

@@ -122,14 +122,16 @@
 header,
 footer {
     .inner {
+        width: 100%;
         max-width: var(--maxw);
-        margin: auto;
+        margin: 0 auto;
         position: relative;
         height: 100%;
+        box-sizing: border-box;
 
         @media screen and (max-width:1800px) {
             padding-left: 2rem;
-            padding-right: 2rem
+            padding-right: 2rem;
         }
     }
 }

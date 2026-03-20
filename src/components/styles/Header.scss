@@ -3,14 +3,19 @@ header {
     top: 4rem;
     width: 100%;
     z-index: 5;
-    height: 10.5rem; 
+    height: 10.5rem;
     transition: all .3s;
 
     .inner {
+        width: 100%;
         max-width: 175rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
+        box-sizing: border-box;
 
         .mob-nav-btn {
             display: none;
@@ -75,14 +80,15 @@ header {
             li {
 
                 @media screen and (max-width:1111px) {
-                    a{
+                    a {
                         display: block;
                         width: 2.5rem;
                         position: relative;
                         transform: translateX(-1rem);
-                        &::after{
+
+                        &::after {
                             display: block;
-                            content:"0";
+                            content: "0";
                             width: 2rem;
                             height: 2rem;
                             background-color: var(--primary);
@@ -92,7 +98,7 @@ header {
                             color: var(--bg);
                             position: absolute;
                             right: -2rem;
-                            top:0
+                            top: 0
                         }
                     }
 

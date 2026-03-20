@@ -6,17 +6,18 @@ header {
     height: 10.5rem; 
     transition: all .3s;
 
-    @media screen and (max-width:1111px) {
-        height: 6.3rem;
-    }
-
     .inner {
         max-width: 175rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         @media screen and (max-width:1111px) {
+            max-width: 102.4rem;
             padding-left:.5rem ;
+        }
+
+        @media screen and (max-width:390px) {
+            max-width: 39rem;
         }
 
         .mob-nav-btn {
